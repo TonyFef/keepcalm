@@ -27,6 +27,7 @@ export type CustomStyles = {
   fontFamily?: CSSProperties["fontFamily"];
   lineHeight?: CSSProperties["lineHeight"];
   color?: CSSProperties["color"];
+  textTransform?: CSSProperties["textTransform"];
 };
 
 export type ComponentProps = {
@@ -37,3 +38,16 @@ export type ComponentProps = {
 export type TypographyProps = JSX.IntrinsicElements[TagKeys] &
   CustomStyles &
   ComponentProps;
+
+export type MainContentProps = {
+  isImageLeft: boolean;
+  imageSrc: string;
+  title?: string;
+  text?: string;
+  subtext?: string;
+};
+
+export type MainSectionProps = {
+  firstImageSrc: string;
+  secondImageSrc: string;
+};

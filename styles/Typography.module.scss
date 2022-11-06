@@ -3,12 +3,18 @@
 .typography--fontFamily-Manrope {
   font-family: "Manrope";
 }
+.typography--fontFamily-OrchideaPro {
+  font-family: "Orchidea Pro";
+}
 .typography--fontFamily-Roboto {
   font-family: "Roboto";
 }
 
 // FONT-SIZE --------------------------
 
+.typography--fontSize-48px {
+  font-size: 48px;
+}
 .typography--fontSize-24px {
   font-size: 24px;
 }
@@ -27,6 +33,13 @@
 
 // LINE-HEIGHT --------------------------
 
+.typography--lineHeight-130 {
+  line-height: 130%;
+}
+.typography--lineHeight-110 {
+  line-height: 110%;
+}
+
 .typography--lineHeight-33px {
   line-height: 33px;
 }
@@ -37,8 +50,14 @@
 // COLOR --------------------------
 
 .typography--color-dark {
-    color: 141414
+  color: 141414;
 }
 .typography--color-light {
-    color: #FFFFFF
+  color: #ffffff;
+}
+
+// TEXT-TRANSFORM --------------------------
+
+.typography--textTransform-uppercase {
+  text-transform: uppercase;
 }
