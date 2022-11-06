@@ -21,13 +21,14 @@ const getElementType = (stringTag: string): ElementType => {
 };
 
 const Typography = ({
-  tag,
+  tag = "span",
   text,
   fontFamily = "Orchidea Pro",
   fontSize = "24px",
   fontWeight = "500",
   lineHeight = "33px",
   color = "dark",
+  textTransform = "none",
   ...props
 }: TypographyProps) => {
   const Component = tag ? getElementType(tag) : "span";
@@ -40,6 +41,7 @@ const Typography = ({
         [styles[`typography--fontWeight-${fontWeight}`]]: fontWeight,
         [styles[`typography--lineHeight-${lineHeight}`]]: lineHeight,
         [styles[`typography--color-${color}`]]: color,
+        [styles[`typography--textTransform-${textTransform}`]]: textTransform,
       })}
       {...props}
     >
