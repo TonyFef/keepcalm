@@ -33,6 +33,7 @@
 
 @media screen and (max-width: 1450px) {
   .swiper {
+    margin-left: 100px;
     &-slide {
       img {
         width: 225px;
@@ -42,11 +43,11 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .swiper {
-    margin-left: 100px;
-  }
-}
+// @media screen and (max-width: 1200px) {
+//   .swiper {
+    
+//   }
+// }
 
 @media screen and (max-width: 870px) {
   .swiper {

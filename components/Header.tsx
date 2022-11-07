@@ -17,6 +17,12 @@ const Header = () => (
             fontFamily={"Manrope"}
             color={"light"}
           />
+          <Image
+            className={styles["header--phone-logo"]}
+            src={"/tel.png"}
+            width={15}
+            height={19}
+          />
         </a>
       </div>
     </div>

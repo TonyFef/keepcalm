@@ -10,6 +10,11 @@
     justify-content: space-between;
     align-items: center;
   }
+  &--phone {
+    &-logo {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1450px) {
@@ -26,5 +31,26 @@
 @media screen and (max-width: 1200px) {
   .header {
     margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    padding: 18px 22px;
+    margin: 0;
+    &--logo {
+      img {
+        width: 118px;
+        height: auto;
+      }
+    }
+    &--phone {
+      span {
+        display: none;
+      }
+      &-logo{
+        display: block;
+      }
+    }
   }
 }
