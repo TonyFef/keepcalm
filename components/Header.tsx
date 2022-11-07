@@ -4,6 +4,7 @@ import { Image } from "./Image";
 
 const Header = () => (
   <header className={styles.header}>
+    <div className={styles["header-wrapper"]}>
       <div className={styles["header--logo"]}>
         <Image src={"/logo.png"} alt="logo" width={213} height={36} />
       </div>
@@ -18,6 +19,7 @@ const Header = () => (
           />
         </a>
       </div>
+    </div>
   </header>
 );
 

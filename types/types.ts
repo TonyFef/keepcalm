@@ -42,6 +42,8 @@ export type TypographyProps = JSX.IntrinsicElements[TagKeys] &
 export type MainContentProps = {
   isImageLeft: boolean;
   imageSrc: string;
+  imageWidth: number;
+  imageHeight: number;
   title?: string;
   text?: string;
   subtext?: string;

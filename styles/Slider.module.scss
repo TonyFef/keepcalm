@@ -30,3 +30,36 @@
     }
   }
 }
+
+@media screen and (max-width: 1450px) {
+  .swiper {
+    &-slide {
+      img {
+        width: 225px;
+        height: 344px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .swiper {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .swiper {
+    margin-left: 50px;
+    &-slide {
+      width: 225px;
+      height: 344px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .swiper {
+    margin: 0;
+  }
+}

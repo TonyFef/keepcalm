@@ -1,6 +1,17 @@
 .section {
   padding-bottom: 160px;
-//   &--title {
-//     padding-top: 200px;
-//   }
+  //   &--title {
+  //     padding-top: 200px;
+  //   }
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-bottom: 75px;
+    &--title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
 }
