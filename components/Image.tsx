@@ -6,7 +6,6 @@ export const Image = ({
   className,
   width = 100,
   height = 100,
-  //   background,
   showOnError,
   onClick,
 }: ImageProps) => {
@@ -22,7 +21,6 @@ export const Image = ({
     <>
       <img
         src={src}
-        // style={{ background }}
         alt={alt}
         className={className}
         width={width}

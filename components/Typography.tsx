@@ -1,6 +1,7 @@
 import { ElementType } from "react";
-import { TypographyProps } from "../types/types";
 import cn from "classnames";
+
+import { TypographyProps } from "../types/types";
 
 import styles from "../styles/Typography.module.scss";
 

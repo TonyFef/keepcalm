@@ -1,8 +1,9 @@
+import { MainSectionProps } from "../../types/types";
+
 import Typography from "../Typography";
 import MainContent from "./MainContent";
 
 import styles from "../../styles/MainSection.module.scss";
-import { MainSectionProps } from "../../types/types";
 
 const MainSection = ({ firstImageSrc, secondImageSrc }: MainSectionProps) => (
   <main className={styles["section"]}>
