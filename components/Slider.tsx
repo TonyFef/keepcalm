@@ -1,13 +1,13 @@
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper";
-
 import cn from "classnames";
+
+import { Image } from "./Image";
+import Typography from "./Typography";
 
 import "swiper/css";
 import styles from "../styles/Slider.module.scss";
-import { useEffect, useState } from "react";
-import { Image } from "./Image";
-import Typography from "./Typography";
 
 const Slider = () => {
   const [imagesForSliderArray, setImagesForSliderArray] = useState<string[]>(
@@ -45,8 +45,6 @@ const Slider = () => {
       <Swiper
         className={styles.swiper}
         direction={"horizontal"}
-        // slidesPerView={4.6}
-        // spaceBetween={40}
         mousewheel={true}
         modules={[Mousewheel]}
         loop={true}
@@ -56,9 +54,6 @@ const Slider = () => {
             spaceBetween: 40,
           },
           415: {
-            slidesPerView: 1.6,
-          },
-          640: {
             slidesPerView: 1.6,
           },
           730: {
@@ -82,7 +77,6 @@ const Slider = () => {
             )}
           >
             <Image src={item} alt="slider img" width={320} height={489}></Image>
-            {/* <img src={item} alt="slider img" /> */}
           </SwiperSlide>
         ))}
       </Swiper>

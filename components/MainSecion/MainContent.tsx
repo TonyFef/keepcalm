@@ -1,4 +1,5 @@
 import { MainContentProps } from "../../types/types";
+
 import Typography from "../Typography";
 import { Image } from "../Image";
 

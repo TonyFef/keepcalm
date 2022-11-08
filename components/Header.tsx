@@ -1,6 +1,7 @@
-import styles from "../styles/Header.module.scss";
 import Typography from "./Typography";
 import { Image } from "./Image";
+
+import styles from "../styles/Header.module.scss";
 
 const Header = () => (
   <header className={styles.header}>
