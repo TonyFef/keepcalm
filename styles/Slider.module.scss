@@ -29,4 +29,47 @@
       object-fit: cover;
     }
   }
+  &--title{
+    h2{
+      padding-bottom: 123px;
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .swiper {
+    margin-left: 100px;
+    &-slide {
+      img {
+        width: 225px;
+        height: 344px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .swiper {
+    margin-left: 50px;
+    &-slide {
+      width: 225px;
+      height: 344px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .swiper {
+    margin: 0;
+    padding-left: 20px;
+    
+    &--title {
+      padding: 0 20px;
+      h2 {
+        font-size: 24px;
+        max-width: 60%;
+        padding-bottom: 60px;
+      }
+    }
+  }
 }

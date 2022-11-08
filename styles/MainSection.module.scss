@@ -1,6 +1,27 @@
 .section {
   padding-bottom: 160px;
-//   &--title {
-//     padding-top: 200px;
-//   }
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-bottom: 75px;
+    &--title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section {
+    padding-bottom: 64px;
+    &--title {
+      padding: 71px 20px 0;
+      h2 {
+        font-size: 24px;
+        max-width: 55%;
+      }
+    }
+  }
 }

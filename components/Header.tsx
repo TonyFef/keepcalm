@@ -4,6 +4,7 @@ import { Image } from "./Image";
 
 const Header = () => (
   <header className={styles.header}>
+    <div className={styles["header-wrapper"]}>
       <div className={styles["header--logo"]}>
         <Image src={"/logo.png"} alt="logo" width={213} height={36} />
       </div>
@@ -16,8 +17,15 @@ const Header = () => (
             fontFamily={"Manrope"}
             color={"light"}
           />
+          <Image
+            className={styles["header--phone-logo"]}
+            src={"/tel.png"}
+            width={15}
+            height={19}
+          />
         </a>
       </div>
+    </div>
   </header>
 );
 

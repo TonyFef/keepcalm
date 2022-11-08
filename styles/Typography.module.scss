@@ -1,10 +1,26 @@
+@font-face {
+  font-family: "Orchidea Pro Regular", serif;
+  src: url("../fonts/OrchideaPro-Regular.woff") format("woff"),
+    url("../fonts/OrchideaPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Orchidea Pro SemiBold", sans-serif;
+  src: url("../fonts/OrchideaPro-SemiBold.woff") format("woff"),
+    url("../fonts/OrchideaPro-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 // FONT-FAMILY --------------------------
 
 .typography--fontFamily-Manrope {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
 .typography--fontFamily-OrchideaPro {
-  font-family: "Orchidea Pro";
+  font-family: "Orchidea Pro SemiBold", serif;
 }
 .typography--fontFamily-Roboto {
   font-family: "Roboto";
@@ -50,7 +66,7 @@
 // COLOR --------------------------
 
 .typography--color-dark {
-  color: 141414;
+  color: #141414;
 }
 .typography--color-light {
   color: #ffffff;

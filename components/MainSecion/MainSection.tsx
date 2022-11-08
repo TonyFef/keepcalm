@@ -5,7 +5,7 @@ import styles from "../../styles/MainSection.module.scss";
 import { MainSectionProps } from "../../types/types";
 
 const MainSection = ({ firstImageSrc, secondImageSrc }: MainSectionProps) => (
-  <section className={styles["section"]}>
+  <main className={styles["section"]}>
     <div className={styles["section--title"]}>
       <Typography
         tag="h2"
@@ -16,10 +16,20 @@ const MainSection = ({ firstImageSrc, secondImageSrc }: MainSectionProps) => (
         textTransform={"uppercase"}
       />
     </div>
-
-    <MainContent isImageLeft={true} imageSrc={firstImageSrc} />
-    <MainContent isImageLeft={false} imageSrc={secondImageSrc} />
-  </section>
+    
+    <MainContent
+      isImageLeft={true}
+      imageSrc={firstImageSrc}
+      imageWidth={860}
+      imageHeight={480}
+    />
+    <MainContent
+      isImageLeft={false}
+      imageSrc={secondImageSrc}
+      imageWidth={599}
+      imageHeight={411}
+    />
+  </main>
 );
 
 export default MainSection;

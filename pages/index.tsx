@@ -6,18 +6,33 @@ import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <div className={styles.wrapper}>
-      <main className={styles.container}>
-        <MainSection
-          firstImageSrc={"/mainSection/mainContentFirst/big.png"}
-          secondImageSrc={"/mainSection/mainContentFirst/small.png"}
+    <>
+      <Head>
+        <title>Home App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={"true"}
         />
-        <Slider />
-        <MainSection
-          firstImageSrc={"/mainSection/mainContentSecond/big.png"}
-          secondImageSrc={"/mainSection/mainContentSecond/small.png"}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Roboto&display=swap"
+          rel="stylesheet"
         />
-      </main>
-    </div>
+      </Head>
+      <div className={styles.wrapper}>
+        <main className={styles.container}>
+          <MainSection
+            firstImageSrc={"/mainSection/mainContentFirst/big.png"}
+            secondImageSrc={"/mainSection/mainContentFirst/small.png"}
+          />
+          <Slider />
+          <MainSection
+            firstImageSrc={"/mainSection/mainContentSecond/big.png"}
+            secondImageSrc={"/mainSection/mainContentSecond/small.png"}
+          />
+        </main>
+      </div>
+    </>
   );
 }

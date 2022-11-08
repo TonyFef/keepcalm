@@ -1,21 +1,144 @@
 .content {
   display: flex;
   align-items: center;
-  margin-top: 123px;
-  &--image {
-    &-left {
+  max-width: 1328px;
+  margin-top: 105px;
+  &-reversed {
+    flex-direction: row-reverse;
+    img {
+      margin-left: 123px;
+    }
+  }
+  &-straight {
+    img {
       margin-left: -262px;
       margin-right: 128px;
-    }
-    &-right {
-      margin-left: 123px;
     }
   }
   &--text {
     max-width: 600px;
-    h3{
-        margin-bottom: 25px;
+    h3 {
+      margin-bottom: 35px;
+      max-width: 80%;
     }
+    p {
+      margin: 10px 0;
+    }
+  }
+}
 
+@media screen and (max-width: 1450px) {
+  .content {
+    &-straight {
+      img {
+        margin-left: -100px;
+        width: 688px;
+        height: auto;
+      }
+    }
+    &-reversed {
+      img {
+        width: 480px;
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    margin-top: 56px;
+    &-straight {
+      img {
+        margin-left: -100px;
+        margin-right: 50px;
+        width: 550px;
+      }
+    }
+    &-reversed {
+      img {
+        margin-left: 50px;
+      }
+    }
+    &--text {
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .content {
+    margin-top: 50px;
+    &-straight {
+      img {
+        margin-left: -100px;
+        margin-right: 50px;
+        width: 420px;
+      }
+    }
+    &-reversed {
+      img {
+        width: 350px;
+      }
+    }
+    &--text {
+      h3 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 870px) {
+  .content {
+    &-straight {
+      img {
+        margin-left: -50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .content {
+    display: block;
+    margin-top: 62px;
+    &-straight {
+      img {
+        margin: 0;
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+        object-position: 40% 50%;
+      }
+    }
+    &-reversed {
+      img {
+        margin: 0;
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    }
+    &--text {
+      padding: 40px 20px 0;
+      // padding-top: 8px;
+      h3 {
+        font-size: 24px;
+        line-height: 120%;
+        font-stretch: condensed;
+        font-weight: 600;
+        max-width: 90%;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        //
+        padding-top: 8px;
+      }
+    }
   }
 }
