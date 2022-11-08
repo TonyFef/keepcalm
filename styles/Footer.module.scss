@@ -8,3 +8,12 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .footer {
+    span {
+      padding-top: 165px;
+      padding-bottom: 18px;
+    }
+  }
+}

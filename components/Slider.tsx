@@ -7,6 +7,7 @@ import "swiper/css";
 import styles from "../styles/Slider.module.scss";
 import { useEffect, useState } from "react";
 import { Image } from "./Image";
+import Typography from "./Typography";
 
 const Slider = () => {
   const [imagesForSliderArray, setImagesForSliderArray] = useState<string[]>(
@@ -31,6 +32,16 @@ const Slider = () => {
 
   return (
     <>
+      <div className={styles["swiper--title"]}>
+        <Typography
+          tag="h2"
+          text={"Lorem ipsum dolor sit amet"}
+          fontSize={"48px"}
+          fontFamily={"OrchideaPro"}
+          lineHeight={"110"}
+          textTransform={"uppercase"}
+        />
+      </div>
       <Swiper
         className={styles.swiper}
         direction={"horizontal"}
@@ -40,7 +51,11 @@ const Slider = () => {
         modules={[Mousewheel]}
         loop={true}
         breakpoints={{
-          310: {
+          100: {
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+          },
+          415: {
             slidesPerView: 1.6,
           },
           640: {
