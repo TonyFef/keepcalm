@@ -16,7 +16,7 @@ const MainSection = ({ firstImageSrc, secondImageSrc }: MainSectionProps) => (
         textTransform={"uppercase"}
       />
     </div>
-
+    
     <MainContent
       isImageLeft={true}
       imageSrc={firstImageSrc}
